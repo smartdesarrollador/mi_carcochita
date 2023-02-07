@@ -46,13 +46,13 @@ h3.heading {
 .form-group input {
     outline: none;
     padding: 16px 20px;
-    color: #338C4A;
+    color: #333;
     font-size: 14px;
     text-transform: capitalize;
     letter-spacing: 2px;
     width: 100%;
     border: 1px solid #ddd;
-    text-align: center;
+    text-align: left;
     background: #F9FAFF;
 }
 
@@ -71,7 +71,7 @@ h3.heading {
     font-size: 0.9em;
     color: #666;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     letter-spacing: 1px;
 }
 
@@ -92,6 +92,6 @@ h3.heading {
     letter-spacing: 2px;
     width: 100%;
     border: 1px solid #ddd;
-    text-align: center;
+    text-align: left;
     background: #F9FAFF;
 }
