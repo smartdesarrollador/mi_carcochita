@@ -29,7 +29,7 @@
 .titulo {
     text-align: center;
     font-size: 40px;
-    color: #22376A;
+    color: #000000;
     font-weight: bold;
     font-family: "Pilsenplakat";
 }
@@ -37,7 +37,7 @@
 .titulo_small {
     text-align: center;
     font-size: 18px;
-    color: #22376A;
+    color: #000000;
     font-weight: bold;
     font-family: "Pilsenplakat";
 }
@@ -45,33 +45,46 @@
 .titulo_categoria {
     text-align: center;
     font-size: 35px;
-    color: #22376A;
+    color: black;
     font-weight: bold;
     font-family: "Pilsenplakat";
 }
 
 .descripcion {
-    font-family: "Ltremark";
+    font-family: "Ltremark" !important;
     font-size: 16px;
-    color: grey;
+    color: #7b8a8b;
+}
+
+.descripcion_nota {
+    font-family: "Ltremark" !important;
+    font-size: 12px;
+    color: #ec1515;
 }
 
 .descripcion_carta {
-    font-family: "Ltremark";
+    font-family: "Ltremark" !important;
     font-size: 16px;
+    text-transform: lowercase;
+}
+
+.descripcion_carta:first-letter {
+
+    text-transform: uppercase;
+
 }
 
 .descripcion2 {
-    font-family: "Ltremark";
+    font-family: "Ltremark" !important;
     font-size: 20px;
-    color: grey;
+    color: #7b8a8b;
 }
 
 .descripcion_bold {
-    font-family: "Ltremark";
+    font-family: "Ltremark" !important;
     font-weight: 900;
     font-size: 16px;
-    color: grey;
+    color: #7b8a8b;
 }
 
 .separador {
@@ -124,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 span.label {
-    font-family: serif;
+    /* font-family: serif; */
     font-weight: normal;
 }
 
@@ -142,17 +155,26 @@ span.buttonText {
     font-size: 1rem;
     font-weight: bold;
     /* Use the Roboto font that is loaded in the <head> */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 /* END  GOOGLE BUTTON*/
 
 .text-egipcio {
-    color: #22376A !important;
+    color: #000000 !important;
+
+    text-transform: lowercase;
+}
+
+
+.text-egipcio:first-letter {
+
+    text-transform: uppercase;
+
 }
 
 .text-egipcioNotImportant {
-    color: #22376A;
+    color: #000000;
 }
 
 .modal {
@@ -232,17 +254,17 @@ span.buttonText {
     -ms-user-select: none;
 }
 
-input:checked+label {
+/* input:checked+label {
     background-color: #22376A !important;
     color: white;
 }
 
 input:checked+label:after {
-    font-family: FontAwesome;
+   
     background-color: #22376A !important;
     color: white;
     content: "\f00c";
-}
+} */
 
 .swal2-container {
     z-index: 9999 !important;

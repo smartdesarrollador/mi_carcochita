@@ -19,6 +19,11 @@ h3.heading {
     }
 }
 
+@font-face {
+    font-family: "Ltremark";
+    src: url("../tipografia/LTRemark-May2021.otf");
+}
+
 
 .w3layouts-contact-fm {
     margin: 0 auto;
@@ -54,12 +59,14 @@ h3.heading {
     border: 1px solid #ddd;
     text-align: left;
     background: #F9FAFF;
+    font-family: "Ltremark" !important;
 }
 
 .form-group textarea {
     min-height: 19em;
     border: 1px solid #ddd;
     background: #F9FAFF;
+    font-family: "Ltremark" !important;
 }
 
 .col-lg-6 {
@@ -73,6 +80,7 @@ h3.heading {
     font-weight: 500;
     /* font-family: 'Poppins', sans-serif; */
     letter-spacing: 1px;
+    font-family: "Ltremark" !important;
 }
 
 .map-w3layouts iframe {
@@ -94,4 +102,5 @@ h3.heading {
     border: 1px solid #ddd;
     text-align: left;
     background: #F9FAFF;
+    font-family: "Ltremark" !important;
 }

@@ -1,6 +1,13 @@
 .titulo-cards {
     font-size: 25px;
     text-align: center;
+    text-transform: lowercase;
+}
+
+.titulo-cards:first-letter {
+
+    text-transform: uppercase;
+
 }
 
 .card-products {
@@ -14,10 +21,12 @@
     font-weight: bold;
     color: #22376A;
 }
-.card-price{
+
+.card-price {
     font-size: 25px;
 }
-.comprar-button{
+
+.comprar-button {
     color: #22376A !important;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -27,11 +36,11 @@
     padding: 10px;
     font-size: 20px;
 }
-.comprar-button:hover{
+
+.comprar-button:hover {
     background-color: #fff;
     color: #22376A !important;
     transition: .5s;
     cursor: pointer;
 
 }
-
