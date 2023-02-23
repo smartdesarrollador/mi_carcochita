@@ -1,18 +1,29 @@
-
-
-@font-face {
-    font-family: "Helvetica Bold";
-    src: url("../fonts/HelveticaNeueBoldItalic.ttf");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Helvetica Light";
-    src: url("../fonts/HelveticaNeueLightItalic.ttf");
-    font-display: swap;
+/* @font-face {
+    font-family: "Oswald";
+    src: url("../../assets/fonts/Oswald.ttf");
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "oswald";
+} */
+
+@font-face {
+    font-family: "Pilsenplakat";
+    src: url("../tipografia/PilsenPlakat.ttf");
+}
+
+@font-face {
+    font-family: "Ltremark";
+    src: url("../tipografia/LTRemark-May2021.otf");
+}
+
+@font-face {
+    font-family: "Pilsenplakat";
+    src: url("../tipografia/PilsenPlakat.ttf");
+}
+
+* {
+    font-family: "Pilsenplakat";
 }
 
 .titulo {
@@ -20,7 +31,60 @@
     font-size: 40px;
     color: #000000;
     font-weight: bold;
-    font-family: 'Satisfy', cursive;
+    font-family: "Pilsenplakat";
+}
+
+.titulo_small {
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Pilsenplakat";
+}
+
+.titulo_categoria {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    font-family: "Pilsenplakat";
+}
+
+.descripcion {
+    font-family: "Ltremark" !important;
+    font-size: 16px;
+    color: #7b8a8b;
+}
+
+.descripcion_nota {
+    font-family: "Ltremark" !important;
+    font-size: 12px;
+    color: #ec1515;
+}
+
+.descripcion_carta {
+    font-family: "Ltremark" !important;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.descripcion_carta:first-letter {
+
+    text-transform: uppercase;
+
+}
+
+.descripcion2 {
+    font-family: "Ltremark" !important;
+    font-size: 20px;
+    color: #7b8a8b;
+}
+
+.descripcion_bold {
+    font-family: "Ltremark" !important;
+    font-weight: 900;
+    font-size: 16px;
+    color: #7b8a8b;
 }
 
 .separador {
@@ -30,17 +94,17 @@
 }
 
 .link-activo {
-    color: #fbf005 !important
+    color: #F8B106 !important
 }
 
-/*
+
 body::-webkit-scrollbar {
     width: 8px;
 }
 
 body {
     scrollbar-width: thin;
-    scrollbar-color: #EEEE16 #CFD8DC;
+    scrollbar-color: #F8B106 #CFD8DC;
 }
 
 body::-webkit-scrollbar-track {
@@ -48,11 +112,11 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #EEEE16;
+    background-color: #F8B106;
     border-radius: 6px;
-    border: 3px solid #EEEE16;
+    border: 3px solid #F8B106;
 }
-*/
+
 
 /*GOOGLE BUTTON*/
 
@@ -73,7 +137,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 span.label {
-    font-family: serif;
+    /* font-family: serif; */
     font-weight: normal;
 }
 
@@ -91,16 +155,25 @@ span.buttonText {
     font-size: 1rem;
     font-weight: bold;
     /* Use the Roboto font that is loaded in the <head> */
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 /* END  GOOGLE BUTTON*/
 
-.text-richard {
+.text-egipcio {
     color: #000000 !important;
+
+    text-transform: lowercase;
 }
 
-.text-richardNotImportant {
+
+.text-egipcio:first-letter {
+
+    text-transform: uppercase;
+
+}
+
+.text-egipcioNotImportant {
     color: #000000;
 }
 
@@ -168,7 +241,7 @@ span.buttonText {
     margin-top: 20px;
     margin-bottom: 10px;
     background-color: #fff;
-    border: 1px solid #000000;
+    border: 1px solid #22376A;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
@@ -181,57 +254,87 @@ span.buttonText {
     -ms-user-select: none;
 }
 
-input:checked + label {
-    background-color: #000000 !important;
+/* input:checked+label {
+    background-color: #22376A !important;
     color: white;
 }
 
-input:checked + label:after {
-    font-family: FontAwesome;
-    background-color: #000000 !important;
+input:checked+label:after {
+   
+    background-color: #22376A !important;
     color: white;
     content: "\f00c";
-}
+} */
 
 .swal2-container {
     z-index: 9999 !important;
 }
 
-.bg-richard-yellow{
-    border: 2px solid #fff;
-    padding: 0.4em 1.7em;
-    color: #6a67ce;
-    font-weight: 500;
-    letter-spacing: 1px;
-    display: block;
-    font-size: 1em;
-    background: #fff;
-    box-shadow: 0 0px 45px rgba(0, 0, 0, .2);
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
+.bg-micarcochita-yellow {
+    color: #22376A;
 }
 
-.bg-transparent {
-    background-color: #000000 !important;
-}
+/* ----- Social --------- */
 
-/* Pollos y Parrillas Richards */
+@media screen and (max-width: 400px) {
+    .social {
+        position: fixed;
+        right: 0;
+        top: 95px;
+        z-index: 2000;
+    }
 
-#img_logo {
-    max-height: 100px;
-    max-width: 100px;
-}
+    .social ul li a {
 
-/* Pollos y Parrillas Richards */
-.satisfy {
-    font-family: 'Satisfy', cursive;
+        padding: 10px 15px;
+
+    }
 }
 
 
-a.nav-link.dropdown-toggle {
-    background: #18C2C4;
-    border-radius: 5px;
+.social {
+    position: fixed;
+    right: 0;
+    top: 200px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    float: right;
+}
+
+
+
+.social ul li .icon-facebook {
+    background: #3b5998;
+}
+
+.social ul li .icon-instagram {
+    background: #e4405f;
+}
+
+.social ul li .icon-whatsapp {
+    background: #25d366;
+}
+
+.social ul li .icon-whatsapp-san-borja {
+    background: #1b9648;
+}
+
+/* ----------- navbar ------------ */
+
+.text-carcochita {
+    color: #22376A !important;
+    font-size: 24px;
 }

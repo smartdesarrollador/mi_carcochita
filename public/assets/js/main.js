@@ -56,7 +56,7 @@ function initAutocompleteStoreSelector() {
 
     let options = {
         types: ['geocode'],
-        componentRestrictions: { country: "PE" }
+        componentRestrictions: {country: "PE"}
     };
 
     autompletado = new google.maps.places.Autocomplete(
@@ -169,7 +169,7 @@ formStoreSelector.addEventListener('submit', async function (event) {
     let gMapsPolygons = [];
     for (let i = 0; i < coordenadasDB.length; i++) {
         const polyObject = {
-            polygon: new google.maps.Polygon({ paths: JSON.parse(coordenadasDB[i].coords) }),
+            polygon: new google.maps.Polygon({paths: JSON.parse(coordenadasDB[i].coords)}),
             price: coordenadasDB[i].price,
             store: coordenadasDB[i].idTienda,
             deliveryZoneId: coordenadasDB[i].id
@@ -185,7 +185,7 @@ formStoreSelector.addEventListener('submit', async function (event) {
                 polygonsContainAddress = true;
                 if (localStorage.getItem('addressIsSelected') === '1' && localStorage.getItem('store') * 1 !== gMapsPolygons[i].store * 1) {
                     let local = '';
-                    local = gMapsPolygons[i].store * 1 === 1 ? 'Lince' : 'Surco';
+                    local = gMapsPolygons[i].store * 1 === 1 ? 'Lince' : 'San Borja';
 
                     console.log(coordenadasDB);
                     const isConfirmed = await Swal.fire({
@@ -242,11 +242,11 @@ function saveDataToStorage(addressIsSelected, store, formatedAddress, shippingTy
         .then(value => value.map(value1 => value1.text())).then();
 }
 
-/* function getCoordinates() {
+function getCoordinates() {
     return fetch('script/delivery/getDeliveryZones.php').then(value => {
         return value.json();
     }).then(value => value.data);
-} */
+}
 
 function openAddressSelectorModal() {
     let addressIsSelected = localStorage.getItem('addressIsSelected');
@@ -263,12 +263,12 @@ async function destroyCart() {
     return fetch('./script/cart/destroyCart.php').then(value => value.text()).then(value => value);
 }
 
-/* function setDeliveryZoneId(id) {
+function setDeliveryZoneId(id) {
     const data = new FormData();
 
     data.append('deliveryZone', id.toString());
 
-    return fetch('./utils/setDeliveryZoneId.php', { method: 'POST', body: data })
+    return fetch('./utils/setDeliveryZoneId.php', {method: 'POST', body: data})
 }
 
 function setMetodoDenvio(metodo) {
@@ -279,8 +279,8 @@ function setMetodoDenvio(metodo) {
     if (metodo === 'DELIVERY') {
         data.append('code', 'reparto')
     }
-    return fetch('./utils/cambiarMetodoDeEnvio.php', { method: 'POST', body: data })
-} */
+    return fetch('./utils/cambiarMetodoDeEnvio.php', {method: 'POST', body: data})
+}
 
 function buyProductAndValidate(event) {
     event.preventDefault();
@@ -305,12 +305,12 @@ selectStoreSelectorElement.addEventListener('change', (ev) => {
         hiddenLatInput.value = '-12.08656225960654'
         hiddenLngInput.value = '-77.04190387146318'
 
-        storeSelectorInput.value = 'Julio Cesar Tello 872 - Lince';
+        storeSelectorInput.value = 'Av. Julio César Tello 898, Lince';
     }
     if (ev.target.value * 1 === 2) {
         hiddenLatInput.value = '-12.109648733552977'
         hiddenLngInput.value = '-76.97506836692882'
-        storeSelectorInput.value = 'Av. El Polo 121 - Surco';
+        storeSelectorInput.value = 'Av. Aviación 2739, San Borja';
     }
 
 
@@ -331,16 +331,16 @@ function selectShippinMethodClick(element) {
         recojoInputContainer.classList.remove('d-none');
         deliveryInputContainer.classList.add('d-none');
 
-        if (selectStoreSelectorElement.value * 1 === 1) {
+        if ( selectStoreSelectorElement.value * 1 === 1) {
             hiddenLatInput.value = '-12.08656225960654'
             hiddenLngInput.value = '-77.04190387146318'
 
-            storeSelectorInput.value = 'Julio Cesar Tello 872 - Lince';
+            storeSelectorInput.value = 'Av. Julio César Tello 898, Lince';
         }
-        if (selectStoreSelectorElement.value * 1 === 2) {
+        if ( selectStoreSelectorElement.value * 1 === 2) {
             hiddenLatInput.value = '-12.109648733552977'
             hiddenLngInput.value = '-76.97506836692882'
-            storeSelectorInput.value = 'Av. El Polo 121 - Surco';
+            storeSelectorInput.value = 'Av. Aviación 2739, San Borja';
         }
 
     }

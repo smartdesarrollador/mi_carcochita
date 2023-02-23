@@ -1,6 +1,13 @@
 .titulo-cards {
     font-size: 25px;
     text-align: center;
+    text-transform: lowercase;
+}
+
+.titulo-cards:first-letter {
+
+    text-transform: uppercase;
+
 }
 
 .card-products {
@@ -12,7 +19,7 @@
 
 .card-points-description {
     font-weight: bold;
-    color: #000000;
+    color: #22376A;
 }
 
 .card-price {
@@ -20,19 +27,19 @@
 }
 
 .comprar-button {
-    color: #ffffff !important;
+    color: #22376A !important;
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: #22376A;
-    border: 1px solid #000000;
+    background-color: #F8B106;
+    border: 1px solid #22376A;
     border-radius: 5px;
     padding: 10px;
     font-size: 20px;
 }
 
 .comprar-button:hover {
-    background-color: #22376A;
-    color: #fff !important;
+    background-color: #fff;
+    color: #22376A !important;
     transition: .5s;
     cursor: pointer;
 

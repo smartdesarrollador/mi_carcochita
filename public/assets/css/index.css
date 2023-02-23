@@ -18,7 +18,7 @@
     border-radius: 0;
     background: #fff;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
-    color:#000000 !important ;
+    color:#9C0001 !important ;
 }
 
 @media (min-width: 992px) {
@@ -34,7 +34,7 @@
 
 /* REESCRIBIENDO LOS ESTILOS POR DEFECTO DE SWEETALERT2 */
 .sweetOkButton {
-    background: #000000 !important;
+    background: #9C0001 !important;
 }
 
 .swal2-input {
@@ -46,22 +46,18 @@
 }
 
 .swal2-styled.swal2-confirm {
-    background: #000000 !important;
+    background: #9C0001 !important;
 }
 
 .swal2-icon.swal2-success .swal2-success-ring {
-    border: .25em solid #000000 !important;
+    border: .25em solid #9c0001 !important;
 }
 
 .swal2-icon.swal2-success [class^=swal2-success-line] {
 
-    background-color: #000000 !important;
+    background-color: #9c0001 !important;
 }
 
 .swal2-container.swal2-center {
     z-index: 2002 !important;
-}
-
-.bg-transparent {
-    background-color: #000000 !important;
 }
